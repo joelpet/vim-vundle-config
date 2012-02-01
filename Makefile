@@ -1,8 +1,9 @@
-SHELL = /bin/sh
+SHELL=/bin/sh
 
-PATH = $(dir $(realpath $(lastword $(MAKEFILE_LIST))))
+MAKEFILE_PATH=$(dir $(realpath $(lastword $(MAKEFILE_LIST))))
 
-install: clone_vundle link setup
+.PHONY: install
+install: clean clone_vundle link setup
 
 .PHONY: clone_vundle
 clone_vundle:
@@ -10,8 +11,8 @@ clone_vundle:
 
 .PHONY: link
 link:
-	/bin/ln --backup --force --symbolic $(PATH)vimrc ~/.vimrc
-	/bin/ln --backup --force --symbolic $(PATH)gvimrc ~/.gvimrc
+	ln --backup --force --symbolic $(MAKEFILE_PATH)vimrc ~/.vimrc
+	ln --backup --force --symbolic $(MAKEFILE_PATH)gvimrc ~/.gvimrc
 
 .PHONY: setup
 setup:
@@ -19,5 +20,4 @@ setup:
 
 .PHONY: clean
 clean:
-	rm ~/.vimrc ~/.gvimrc
-	rm -r ~/.vim/bundle
+	rm -rf ~/.vim/bundle
