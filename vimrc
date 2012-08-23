@@ -55,7 +55,7 @@ syntax on "turn on syntax highlighting
 set ruler "show the line and column number of the cursor position
 set t_Co=256
 let g:solarized_termcolors=256
-set background=dark
+set background=light
 colorscheme solarized "select colorscheme
 
 
