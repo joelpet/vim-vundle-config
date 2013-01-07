@@ -16,6 +16,7 @@ Bundle 'gmarik/vundle'
 
   " My Bundles here:
   """"""""""""""""""
+  Bundle 'LaTeX-Box-Team/LaTeX-Box'
   Bundle 'Townk/vim-autoclose'
   Bundle 'altercation/vim-colors-solarized'
   Bundle 'coot/atp_vim'
