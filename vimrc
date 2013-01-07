@@ -18,7 +18,7 @@ Bundle 'gmarik/vundle'
   """"""""""""""""""
   Bundle 'Townk/vim-autoclose'
   Bundle 'altercation/vim-colors-solarized'
-  Bundle 'git://vim-latex.git.sourceforge.net/gitroot/vim-latex/vim-latex'
+  Bundle 'coot/atp_vim'
   Bundle 'jnurmine/Zenburn'
   Bundle 'mileszs/ack.vim'
   Bundle 'scrooloose/nerdcommenter'
@@ -67,10 +67,6 @@ set backspace=indent,eol,start "intuitive backspacing in insert mode
 " => Plugins
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-  " LaTeX Suite
-  """"""""""""""""""""""""""""""
-  let g:Tex_ViewRule_dvi = 'xdvi' "use xdvi for viewing dvi files
-
   " Ack
   """"""""""""""""""""""""""""""
   let g:ackprg="ack-grep --with-filename --nocolor --nogroup --column"
@@ -78,6 +74,12 @@ set backspace=indent,eol,start "intuitive backspacing in insert mode
   " delimitMate
   """"""""""""""""""""""""""""""
   let delimitMate_excluded_ft = "xml"
+
+  " LatexBox
+  """"""""""""""""""""""""""""""
+  let g:LatexBox_latexmk_options = "-pvc"
+  let g:LatexBox_output_type = "dvi"
+  let g:LatexBox_cite_pattern = '\c\\\a*\(cite\|quote\)\a*\*\?\_\s*{'
 
 
 " => Indenting
@@ -93,6 +95,7 @@ set smarttab "makes a <Tab> in front of a line insert blanks according to 'shift
 " => Key mappings
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let mapleader = "," "change map leader (<Leader>)
+let maplocalleader = "," "change map leader (<Leader>)
 
 " Switch to current dir
 noremap <leader>cd :cd %:p:h<cr>
@@ -111,11 +114,6 @@ inoremap <S-CR> <CR><Esc>O
   """"""""""""""""""""""""""""""
   "Toggle Tag list on/off
   nmap <silent> <F5> :TlistToggle<CR>
-
-  " LaTeX Suite
-  """"""""""""""""""""""""""""""
-  au BufWritePost *.tex silent call Tex_CompileLatex()
-  au BufWritePost *.tex silent !pkill -USR1 xdvi.bin
 
   " Check Syntax
   """"""""""""""""""""""""""""""
