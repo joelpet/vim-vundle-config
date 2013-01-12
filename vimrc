@@ -19,7 +19,6 @@ Bundle 'gmarik/vundle'
   Bundle 'LaTeX-Box-Team/LaTeX-Box'
   Bundle 'Townk/vim-autoclose'
   Bundle 'altercation/vim-colors-solarized'
-  Bundle 'coot/atp_vim'
   Bundle 'jnurmine/Zenburn'
   Bundle 'mileszs/ack.vim'
   Bundle 'scrooloose/nerdcommenter'
@@ -97,6 +96,9 @@ set smarttab "makes a <Tab> in front of a line insert blanks according to 'shift
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let mapleader = "," "change map leader (<Leader>)
 let maplocalleader = "," "change map leader (<Leader>)
+
+" Quick Escape
+inoremap jk <Esc>
 
 " Switch to current dir
 noremap <leader>cd :cd %:p:h<cr>
