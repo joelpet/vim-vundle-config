@@ -29,7 +29,6 @@ Bundle 'gmarik/vundle'
   Bundle 'scrooloose/nerdtree'
   Bundle 'scrooloose/syntastic'
   Bundle 'sukima/xmledit'
-  Bundle 'tomtom/checksyntax_vim'
   Bundle 'tpope/vim-fugitive'
   Bundle 'tpope/vim-repeat'
   Bundle 'tpope/vim-surround'
@@ -104,11 +103,6 @@ inoremap <S-CR> <CR><Esc>O
   " Buffet
   """"""""""""""""""""""""""""""
   noremap <leader>bl :Bufferlistsw<cr>
-
-  " Check Syntax
-  """"""""""""""""""""""""""""""
-  " Explicit syntax check (mnemonic: sc)
-  noremap <silent> <leader>sc :CheckSyntax<cr>
 
   " clang_complete
   """"""""""""""""""""""""""""""
