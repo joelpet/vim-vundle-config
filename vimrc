@@ -68,24 +68,6 @@ colorscheme solarized "select colorscheme
 set backspace=indent,eol,start "intuitive backspacing in insert mode
 
 
-" => Plugins
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-
-  " Ack
-  """"""""""""""""""""""""""""""
-  let g:ackprg="ack-grep --with-filename --nocolor --nogroup --column"
-
-  " delimitMate
-  """"""""""""""""""""""""""""""
-  let delimitMate_excluded_ft = "xml"
-
-  " LatexBox
-  """"""""""""""""""""""""""""""
-  let g:LatexBox_latexmk_options = "-pvc"
-  let g:LatexBox_output_type = "dvi"
-  let g:LatexBox_cite_pattern = '\c\\\a*\(cite\|quote\)\a*\*\?\_\s*{'
-
-
 " => Indenting
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 set autoindent "copy indent from current line when starting a new line
@@ -99,7 +81,8 @@ set smarttab "makes a <Tab> in front of a line insert blanks according to 'shift
 " => Key mappings
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let mapleader = "," "change map leader (<Leader>)
-let maplocalleader = "," "change map leader (<Leader>)
+"LaTeX-Box interfers with ,lv and ,ll in LaTeX-Suite so leave it like this for now.
+"let maplocalleader = "," "change map leader (<Leader>)
 
 " Quick Escape
 inoremap jk <Esc>
@@ -111,14 +94,36 @@ noremap <leader>cd :cd %:p:h<cr>
 inoremap <S-CR> <CR><Esc>O
 
 
+" => Plugins
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+  " Ack
+  """"""""""""""""""""""""""""""
+  let g:ackprg="ack-grep --with-filename --nocolor --nogroup --column"
+
   " Buffet
   """"""""""""""""""""""""""""""
   noremap <leader>bl :Bufferlistsw<cr>
+
+  " Check Syntax
+  """"""""""""""""""""""""""""""
+  " Explicit syntax check (mnemonic: sc)
+  noremap <silent> <leader>sc :CheckSyntax<cr>
 
   " clang_complete
   """"""""""""""""""""""""""""""
   let g:clang_use_library=1
   nnoremap <Leader>cq :call g:ClangUpdateQuickFix()<CR>
+
+  " delimitMate
+  """"""""""""""""""""""""""""""
+  let delimitMate_excluded_ft = "xml"
+
+  " LatexBox
+  """"""""""""""""""""""""""""""
+  let g:LatexBox_latexmk_options = "-pvc"
+  let g:LatexBox_output_type = "dvi"
+  let g:LatexBox_cite_pattern = '\c\\\a*\(cite\|quote\)\a*\*\?\_\s*{'
 
   " NERD Tree
   """"""""""""""""""""""""""""""
@@ -131,9 +136,3 @@ inoremap <S-CR> <CR><Esc>O
   """"""""""""""""""""""""""""""
   "Toggle Tag list on/off
   nmap <silent> <F5> :TlistToggle<CR>
-
-  " Check Syntax
-  """"""""""""""""""""""""""""""
-  " Explicit syntax check (mnemonic: sc)
-  noremap <silent> <leader>sc :CheckSyntax<cr>
-
