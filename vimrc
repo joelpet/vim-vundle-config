@@ -22,9 +22,9 @@ Bundle 'gmarik/vundle'
   Bundle 'git://vim-latex.git.sourceforge.net/gitroot/vim-latex/vim-latex'
   Bundle 'jnurmine/Zenburn'
   Bundle 'mileszs/ack.vim'
+  Bundle 'sandeepcr529/Buffet.vim'
   Bundle 'scrooloose/nerdcommenter'
   Bundle 'scrooloose/nerdtree'
-  Bundle 'slack/vim-bufexplorer'
   Bundle 'sukima/xmledit'
   Bundle 'tomtom/checksyntax_vim'
   Bundle 'tpope/vim-fugitive'
@@ -106,6 +106,11 @@ noremap <leader>cd :cd %:p:h<cr>
 
 " Useful newline mapping when between braces. {|} => {\n<indent>|\n}
 inoremap <S-CR> <CR><Esc>O
+
+
+  " Buffet
+  """"""""""""""""""""""""""""""
+  noremap <leader>bl :Bufferlistsw<cr>
 
   " NERD Tree
   """"""""""""""""""""""""""""""
