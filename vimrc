@@ -17,6 +17,7 @@ Bundle 'gmarik/vundle'
   " My Bundles here:
   """"""""""""""""""
   Bundle 'LaTeX-Box-Team/LaTeX-Box'
+  Bundle 'Rip-Rip/clang_complete'
   Bundle 'Townk/vim-autoclose'
   Bundle 'altercation/vim-colors-solarized'
   Bundle 'git://vim-latex.git.sourceforge.net/gitroot/vim-latex/vim-latex'
@@ -112,6 +113,11 @@ inoremap <S-CR> <CR><Esc>O
   " Buffet
   """"""""""""""""""""""""""""""
   noremap <leader>bl :Bufferlistsw<cr>
+
+  " clang_complete
+  """"""""""""""""""""""""""""""
+  let g:clang_use_library=1
+  nnoremap <Leader>cq :call g:ClangUpdateQuickFix()<CR>
 
   " NERD Tree
   """"""""""""""""""""""""""""""
