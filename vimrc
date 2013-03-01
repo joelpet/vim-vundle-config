@@ -17,6 +17,7 @@ Bundle 'gmarik/vundle'
   " My Bundles here:
   """"""""""""""""""
   Bundle 'LaTeX-Box-Team/LaTeX-Box'
+  Bundle 'Lokaltog/powerline'
   Bundle 'Rip-Rip/clang_complete'
   Bundle 'Townk/vim-autoclose'
   Bundle 'altercation/vim-colors-solarized'
@@ -126,7 +127,12 @@ inoremap <S-CR> <CR><Esc>O
   nmap <silent> <F4> :NERDTreeToggle<CR> 
   "Filter uninteresting files
   let NERDTreeIgnore = ['\.class$']
-  
+
+  " Powerline
+  """"""""""""""""""""""""""""""
+  set rtp+=~/.vim/bundle/powerline/powerline/bindings/vim
+  set laststatus=2
+
   " Tag list
   """"""""""""""""""""""""""""""
   "Toggle Tag list on/off
