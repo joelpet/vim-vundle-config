@@ -24,6 +24,7 @@ Bundle 'gmarik/vundle'
   Bundle 'git://vim-latex.git.sourceforge.net/gitroot/vim-latex/vim-latex'
   Bundle 'jnurmine/Zenburn'
   Bundle 'jnwhiteh/vim-golang'
+  Bundle 'joelpet/vim-ft-config'
   Bundle 'kien/ctrlp.vim'
   Bundle 'mileszs/ack.vim'
   Bundle 'sandeepcr529/Buffet.vim'
@@ -146,8 +147,8 @@ inoremap <S-CR> <CR><Esc>O
 " => Autocommands
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-if !exists("autocommands_loaded")
-    let autocommands_loaded = 1
+" Currently no autocommands in use.
 
-    au FileType tex set textwidth=80
-endif
+"if !exists("autocommands_loaded")
+    "let autocommands_loaded = 1
+"endif
