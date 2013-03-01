@@ -111,6 +111,10 @@ inoremap <S-CR> <CR><Esc>O
   let g:clang_use_library=1
   nnoremap <Leader>cq :call g:ClangUpdateQuickFix()<CR>
 
+  " CtrlP
+  """"""""""""""""""""""""""""""
+  nnoremap <C-S-P> :<C-U>CtrlPBuffer<CR>
+
   " delimitMate
   """"""""""""""""""""""""""""""
   let delimitMate_excluded_ft = "xml"
