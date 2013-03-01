@@ -141,3 +141,13 @@ inoremap <S-CR> <CR><Esc>O
   """"""""""""""""""""""""""""""
   "Toggle Tag list on/off
   nmap <silent> <F5> :TlistToggle<CR>
+
+
+" => Autocommands
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+if !exists("autocommands_loaded")
+    let autocommands_loaded = 1
+
+    au FileType tex set textwidth=80
+endif
