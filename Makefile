@@ -9,6 +9,11 @@ install: clean clone_vundle link setup
 clone_vundle:
 	git clone git://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
 
+.PHONY: get_font
+get_font:
+	mkdir -p ~/.fonts
+	git://github.com/Lokaltog/powerline-fonts.git ~/.fonts/
+
 .PHONY: link
 link:
 	ln --backup --force --symbolic $(MAKEFILE_PATH)vimrc ~/.vimrc
