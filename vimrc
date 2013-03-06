@@ -19,6 +19,7 @@ Bundle 'gmarik/vundle'
   Bundle 'LaTeX-Box-Team/LaTeX-Box'
   Bundle 'Lokaltog/powerline'
   Bundle 'Rip-Rip/clang_complete'
+  Bundle 'SirVer/ultisnips'
   Bundle 'Townk/vim-autoclose'
   Bundle 'altercation/vim-colors-solarized'
   Bundle 'git://vim-latex.git.sourceforge.net/gitroot/vim-latex/vim-latex'
@@ -66,6 +67,12 @@ set background=light
 colorscheme solarized "select colorscheme
 
 
+" => Completion
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+set pumheight=10 "maximum number of popup menu items for Insert mode completion
+set completeopt=menuone,longest "show menu and complete longest, don't show preview window
+
+
 " => Editing
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 set backspace=indent,eol,start "intuitive backspacing in insert mode
@@ -110,6 +117,9 @@ inoremap <S-CR> <CR><Esc>O
 
   " clang_complete
   """"""""""""""""""""""""""""""
+  let g:clang_complete_auto=0
+  let g:clang_snippets=1
+  let g:clang_snippets_engine='ultisnips'
   let g:clang_use_library=1
   nnoremap <Leader>cq :call g:ClangUpdateQuickFix()<CR>
 
