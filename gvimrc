@@ -11,8 +11,8 @@
 " => GUI Options
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Remove menu and toolbar
-set guioptions-=m
-set guioptions-=T
+set guioptions+=mTrRlLb
+set guioptions-=mTrRlLb
 
 set guifont=Source\ Code\ Pro\ For\ Powerline\ 9,Monospace\ 9
 
