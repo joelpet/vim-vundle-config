@@ -149,6 +149,11 @@ inoremap <S-CR> <CR><Esc>O
   set rtp+=~/.vim/bundle/powerline/powerline/bindings/vim
   set laststatus=2
 
+  " Syntastic
+  """"""""""""""""""""""""""""""
+  let g:syntastic_c_config_file='.clang_complete'
+  let g:syntastic_cpp_config_file='.clang_complete'
+
   " Tag list
   """"""""""""""""""""""""""""""
   "Toggle Tag list on/off
