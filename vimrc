@@ -17,11 +17,11 @@ Bundle 'gmarik/vundle'
   " My Bundles here:
   """"""""""""""""""
   Bundle 'LaTeX-Box-Team/LaTeX-Box'
-  Bundle 'Lokaltog/powerline'
   Bundle 'Rip-Rip/clang_complete'
   Bundle 'SirVer/ultisnips'
   Bundle 'Townk/vim-autoclose'
   Bundle 'altercation/vim-colors-solarized'
+  Bundle 'bling/vim-airline'
   Bundle 'git://vim-latex.git.sourceforge.net/gitroot/vim-latex/vim-latex'
   Bundle 'jnurmine/Zenburn'
   Bundle 'jnwhiteh/vim-golang'
@@ -143,11 +143,6 @@ inoremap <S-CR> <CR><Esc>O
   nmap <silent> <F4> :NERDTreeToggle<CR> 
   "Filter uninteresting files
   let NERDTreeIgnore = ['\.class$']
-
-  " Powerline
-  """"""""""""""""""""""""""""""
-  set rtp+=~/.vim/bundle/powerline/powerline/bindings/vim
-  set laststatus=2
 
   " Syntastic
   """"""""""""""""""""""""""""""

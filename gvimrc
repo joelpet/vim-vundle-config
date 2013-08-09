@@ -14,6 +14,4 @@
 set guioptions+=mTrRlLb
 set guioptions-=mTrRlLb
 
-set guifont=Source\ Code\ Pro\ For\ Powerline\ 9,Monospace\ 9
-
 set background=light

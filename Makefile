@@ -3,16 +3,11 @@ SHELL=/bin/sh
 MAKEFILE_PATH=$(dir $(realpath $(lastword $(MAKEFILE_LIST))))
 
 .PHONY: install
-install: clean clone_vundle link get_font setup
+install: clean clone_vundle link setup
 
 .PHONY: clone_vundle
 clone_vundle:
 	git clone git://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
-
-.PHONY: get_font
-get_font:
-	mkdir -p ~/.fonts
-	git clone https://github.com/Lokaltog/powerline-fonts.git ~/.fonts/
 
 .PHONY: link
 link:
