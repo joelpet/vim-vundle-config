@@ -62,6 +62,7 @@ set scrolloff=3 "minimal number of screen lines to keep above/below the cursor
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 syntax on "turn on syntax highlighting
 set ruler "show the line and column number of the cursor position
+set laststatus=2 "always show statusline
 set t_Co=256
 let g:solarized_termcolors=256
 set background=light
@@ -111,6 +112,10 @@ inoremap <S-CR> <CR><Esc>O
   " Ack
   """"""""""""""""""""""""""""""
   let g:ackprg="ack-grep --with-filename --nocolor --nogroup --column"
+
+  " Airline
+  """"""""""""""""""""""""""""""
+  let g:airline_theme = 'solarized'
 
   " Buffet
   """"""""""""""""""""""""""""""
