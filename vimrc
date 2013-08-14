@@ -47,7 +47,7 @@ filetype plugin indent on "enable loading plugins and indents based on file type
 
 " => General settings
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-set nocompatible "drop compatibility for Vi 
+set nocompatible "drop compatibility for Vi
 set ignorecase "ignore case on searches and everywhere else
 set infercase "make insert-matching preserve the already written characters
 set mouse=a "enable the mouse in compatible terms for all modes
@@ -55,7 +55,7 @@ set number "enable line numbers
 set smartcase "enable case sensitive search if pattern contains upper case
 set wildmenu "show possible completion matches
 set wildmode=list:longest "list all matches and complete to longest common string
-set scrolloff=3 "minimal number of screen lines to keep above/below the cursor 
+set scrolloff=3 "minimal number of screen lines to keep above/below the cursor
 
 
 " => Appearence options
@@ -150,7 +150,7 @@ inoremap <S-CR> <CR><Esc>O
   " NERD Tree
   """"""""""""""""""""""""""""""
   "Toggle NERD Tree on/off
-  nmap <silent> <F4> :NERDTreeToggle<CR> 
+  nmap <silent> <F4> :NERDTreeToggle<CR>
   "Filter uninteresting files
   let NERDTreeIgnore = ['\.class$']
 
