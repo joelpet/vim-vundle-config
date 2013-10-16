@@ -131,7 +131,8 @@ inoremap <S-CR> <CR><Esc>O
 
   " CtrlP
   """"""""""""""""""""""""""""""
-  nnoremap <C-B> :<C-U>CtrlPBuffer<CR>
+  nnoremap <Leader>pp :<C-U>CtrlP<CR>
+  nnoremap <Leader>pb :<C-U>CtrlPBuffer<CR>
   let g:ctrlp_follow_symlinks = 1
   let g:ctrlp_match_window = 'min:5,max:10,results:100'
   let g:ctrlp_show_hidden = 0
