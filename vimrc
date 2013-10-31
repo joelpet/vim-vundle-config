@@ -61,7 +61,7 @@ set scrolloff=3 "minimal number of screen lines to keep above/below the cursor
 
 " => Appearence options
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-syntax on "turn on syntax highlighting
+syntax enable "turn on syntax highlighting
 set ruler "show the line and column number of the cursor position
 set laststatus=2 "always show statusline
 set t_Co=256
