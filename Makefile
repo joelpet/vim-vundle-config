@@ -7,7 +7,7 @@ install: clean clone_vundle link setup
 
 .PHONY: clone_vundle
 clone_vundle:
-	git clone git://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
+	git clone https://github.com/joelpet/vim-vundle-config.git ~/.vim/bundle/vundle
 
 .PHONY: link
 link:
