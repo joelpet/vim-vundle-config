@@ -3,7 +3,7 @@ SHELL=/bin/sh
 MAKEFILE_PATH=$(dir $(realpath $(lastword $(MAKEFILE_LIST))))
 
 .PHONY: install
-install: clean clone_vundle checkout_tag link setup
+install: clean clone_vundle link setup
 
 .PHONY: clone_vundle
 clone_vundle:
