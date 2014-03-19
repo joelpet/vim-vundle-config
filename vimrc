@@ -9,6 +9,8 @@
 
 " => Vundle required settings
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+set shell=/bin/sh
+set nocompatible " be iMproved
 filetype off "disable file type detection for loading specific options
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
@@ -39,7 +41,6 @@ Bundle 'gmarik/vundle'
   Bundle 'tpope/vim-fugitive'
   Bundle 'tpope/vim-repeat'
   Bundle 'tpope/vim-surround'
-  Bundle 'tsaleh/vim-matchit'
   Bundle 'vim-scripts/darkspectrum'
   Bundle 'vim-scripts/taglist.vim'
 
@@ -109,10 +110,6 @@ inoremap <S-CR> <CR><Esc>O
 
 " => Plugins
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-
-  " Ack
-  """"""""""""""""""""""""""""""
-  let g:ackprg="ack-grep --with-filename --nocolor --nogroup --column"
 
   " Airline
   """"""""""""""""""""""""""""""
