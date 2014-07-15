@@ -68,7 +68,7 @@ set laststatus=2 "always show statusline
 set t_Co=256
 let g:solarized_termcolors=256
 set background=light
-colorscheme solarized "select colorscheme
+silent! colorscheme solarized "select colorscheme
 
 
 " => Completion
