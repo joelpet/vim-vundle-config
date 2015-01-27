@@ -22,7 +22,7 @@ link:
 
 .PHONY: setup
 setup:
-	vim +VundleInstall +qall
+	vim +PluginInstall +qall
 
 .PHONY: clean
 clean:
