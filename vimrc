@@ -14,7 +14,7 @@ set nocompatible " be iMproved
 filetype off "disable file type detection for loading specific options
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
-Bundle 'gmarik/vundle'
+Plugin 'gmarik/vundle'
 
   " My Bundles here:
   """"""""""""""""""
