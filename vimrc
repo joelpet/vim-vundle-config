@@ -43,7 +43,6 @@ Plugin 'gmarik/vundle'
   Plugin 'tpope/vim-repeat'
   Plugin 'tpope/vim-surround'
   Plugin 'vim-scripts/darkspectrum'
-  Plugin 'vim-scripts/taglist.vim'
 
 filetype plugin indent on "enable loading plugins and indents based on file type (required for Vundle)
 
