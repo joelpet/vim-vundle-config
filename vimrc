@@ -167,8 +167,11 @@ inoremap <S-CR> <CR><Esc>O
 " => Autocommands
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-" Currently no autocommands in use.
+"Ensure that Vim includes the autocommands only once
+if !exists("autocommands_loaded")
+    let autocommands_loaded = 1
 
-"if !exists("autocommands_loaded")
-    "let autocommands_loaded = 1
-"endif
+    "Prevent passwords from `pass` leaking into swap, backup and undo files
+    au BufNewFile,BufRead /dev/shm/pass.* setlocal noswapfile nobackup noundofile
+endif
+
