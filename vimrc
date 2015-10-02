@@ -100,6 +100,7 @@ let mapleader = "," "change map leader (<Leader>)
 
 " Quick Escape
 inoremap jk <Esc>
+inoremap JK <Esc>
 
 " Switch to current dir
 noremap <leader>cd :cd %:p:h<cr>
